@@ -1,0 +1,16 @@
+---
+import type { UnitSkill } from "@/data/skills";
+
+type Props = UnitSkill;
+
+const { name, exp_level } = Astro.props;
+---
+
+<div
+    class="w-fit cursor-pointer rounded-md bg-neutral-900 px-2 py-2 transition-all duration-300 hover:-translate-y-2 hover:border-neutral-400 hover:bg-neutral-900/90"
+>
+    <div class="flex flex-col items-center gap-1">
+        <p class="text-white/90">{name}</p>
+        {exp_level && <p>({exp_level})</p>}
+    </div>
+</div>

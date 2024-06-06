@@ -11,6 +11,7 @@ type Props = {
   techs: string;
   prod_link?: string;
   project_type: string;
+  project_year: string;
 };
 
 const {
@@ -55,7 +56,10 @@ const formatTechs = (value: string) => value.toString().replaceAll(",", " • ")
     stroke-linecap="round"
     stroke-linejoin="round"></path>
   </svg> -->
-  <p class="w-fit rounded-md bg-neutral-900 px-4 py-1">{status}</p>
+  <div class="flex gap-2">
+    <p class="w-fit rounded-md bg-neutral-900 px-4 py-1">{project_type}</p>
+    <p class="w-fit rounded-md bg-neutral-900 px-4 py-1">{status}</p>
+  </div>
 </a>
 
 <!-- 

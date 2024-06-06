@@ -13,6 +13,7 @@ const postsCollection = defineCollection({
     status: z.string().optional(),
     prod_link: z.string().optional(),
     project_type: z.string(),
+    project_year: z.string(),
   }),
 });
 

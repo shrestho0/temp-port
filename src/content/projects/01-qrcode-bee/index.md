@@ -1,21 +1,30 @@
 ---
 title: "QRCode Bee"
 publishedAt: 2024-05-24
-description: "Lorem ipsum dolor sit amet consectetur et ultrices blandit neque ege"
+description: "Advanced Customized QR and VCard Generation Tool"
 slug: "qrcode-bee"
 isPublish: true
 techs: "SvelteKit, Express, NodeJs"
 status: "Production"
 project_type: "Client Project"
-prod_link: "https://google.com"
+project_year: "2024"
+
 ---
 
-## Vocesque meum remis est neque Neptunus monte
 
-Lorem markdownum nunc _adfuit_ fecisse, `quae pectus`, quod seu mortale suo
-Minerva iussit obortas. Favilla victa; alarum signis barbara, nec _sibi dentes_
-hostes?
+## Project Intro
 
+QRCode-BEE is a microservice based scalable solution for customizer qr, vcard generation sass application. This system is built with SvelteKit, Express, Golang, Pocketbase and other technologies. This project has been developed with collaboration with Ahsan Hasib Koushik for a tech company based in Bangladesh. The whole system, from system design to deployment was done following the DevOps methedology. While doing the project, we modified the qr library using jsdom and canvas that helped us create apis for generations. Web application of this project, the frontend service, consists of 15+ modules for user along with payment and other miscellaneous features and capable of providing static and dynamic qr codes for each. Bulk qrcode, file manager, analytics, refer and earn, trash  are some other user specific features. 
+
+## Screenshots
+
+Some screenshots of the project due to preview url is not available. 
+
+### Frontend Application
+
+
+
+<!-- 
 ## Corporibus Leucon
 
 Quaeque viridis, pariter possit. Velatus Thetis, ab Buten, in et ite positis
@@ -55,4 +64,4 @@ adplicat relinquentur inter, si pete. Magna constitit ore rediit et parentis
 pomaria lumina seque aura.
 
 [multae requirit primi]: http://heu.io/
-[si]: http://infelixlucina.net/mutati
+[si]: http://infelixlucina.net/mutati -->

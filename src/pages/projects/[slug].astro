@@ -21,10 +21,12 @@ const { Content } = await project.render();
 ---
 
 <Layout title={project.data.title} description={project.data.description}>
-  <main class="projects mx-auto flex w-full max-w-prose flex-col gap-4">
+  <main class="post mx-auto flex w-full max-w-prose flex-col gap-4">
     <header role="presentation">
-      <h1 class="text-md">
-        {project.data.title} - {formatDate(project.data.publishedAt)}
+      <h1 class="text-xl">
+        {project.data.title} - <span class="text-lg">
+          {formatDate(project.data.publishedAt)}
+        </span>
       </h1>
       <p class="italic">{project.data.description}</p>
     </header>

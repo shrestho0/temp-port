@@ -4,6 +4,7 @@ type Social = {
 };
 
 type Presentation = {
+  name: string;
   mail: string;
   title: string;
   short_title: string;
@@ -13,6 +14,7 @@ type Presentation = {
 };
 
 const presentation: Presentation = {
+  name: "Shrestho",
   mail: "coffee@shrestho.me",
   short_title: 'Shrestho',
   title: `Hi, I’m Shrestho 👋`,

@@ -11,13 +11,16 @@ import presentation from "@/data/presentation";
 import experiences from "@/data/experience";
 import ExperienceCard from "@/components/ExperienceCard.astro";
 import ProjectCard from "@/components/ProjectCard.astro";
+import skills from "@/data/skills";
+import SkillCard from "@/components/SkillCard.astro";
 
-const projects = (await getCollection("projects")).sort(function (
-  first,
-  second
-) {
-  return second.data.publishedAt.getTime() - first.data.publishedAt.getTime();
-});
+// const projects = (await getCollection("projects")).sort(function (
+//   first,
+//   second
+// ) {
+//   return second.data.publishedAt.getTime() - first.data.publishedAt.getTime();
+// });
+const projects = await getCollection("projects");
 ---
 
 <Layout>
@@ -51,9 +54,53 @@ const projects = (await getCollection("projects")).sort(function (
       </div>
     </article>
 
+    <article class="flex flex-col gap-6">
+      <header class="flex w-full flex-row justify-between gap-2">
+        <h3 class="text-lg text-neutral-100">Technologies I use</h3>
+      </header>
+
+      <p class="text-lg">Languages:</p>
+
+      <section class="flex flex-row flex-wrap gap-4">
+        {
+          skills.languages.map((d) => (
+            <SkillCard name={d.name} exp_level={d.exp_level} />
+          ))
+        }
+      </section>
+
+      <p class="text-lg">Frameworks:</p>
+      <section class="flex flex-row flex-wrap gap-4">
+        {
+          skills.frameworks.map((d) => (
+            <SkillCard name={d.name} exp_level={d.exp_level} />
+          ))
+        }
+      </section>
+
+      <p class="text-lg">Databases:</p>
+      <section class="flex flex-row flex-wrap gap-4">
+        {
+          skills.databases.map((d) => (
+            <SkillCard name={d.name} exp_level={d.exp_level} />
+          ))
+        }
+      </section>
+      <p class="text-lg">Other tools:</p>
+      <section class="flex flex-row flex-wrap gap-4">
+        {
+          skills.tools.map((d) => (
+            <SkillCard name={d.name} exp_level={d.exp_level} />
+          ))
+        }
+      </section>
+    </article>
+
     <article class="flex flex-col gap-8">
       <header class="flex w-full flex-row justify-between gap-2">
-        <h3 class="text-lg text-neutral-100">My Projects</h3>
+        <h3 class="text-lg text-neutral-100">
+          My Projects ({projects.length})
+        </h3>
         <Link
           href="/projects"
           label="See all projects"
@@ -61,6 +108,7 @@ const projects = (await getCollection("projects")).sort(function (
           target="_self"
         />
       </header>
+
       {projects.length === 0 && <p>Soon, stay connected 👀...</p>}
 
       <section class="flex flex-col gap-4 md:flex-row md:flex-wrap">
@@ -78,12 +126,12 @@ const projects = (await getCollection("projects")).sort(function (
                   status={project.data.status}
                   prod_link={project.data.prod_link}
                   project_type={project.data.project_type}
+                  project_year={project.data.project_year}
                 />
               ))
         }
       </section>
     </article>
-
     <!-- <article class="flex flex-col gap-8">
       <header class="flex w-full flex-row justify-between gap-2">
         <h3 class="text-lg text-neutral-100">
@@ -122,7 +170,7 @@ const projects = (await getCollection("projects")).sort(function (
         Email me at <Link
           href={`mailto:${presentation.mail}`}
           label={presentation.mail}
-        /> or follow me via my social links.
+        /> or contact/follow me via my social links.
       </p>
 
       <SocialLinks />
