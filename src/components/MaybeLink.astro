@@ -1,0 +1,27 @@
+---
+type Props = {
+    href: string;
+    classes: string;
+    isLink: boolean;
+};
+
+const { href, classes, isLink } = Astro.props;
+---
+
+<>
+    {
+        isLink && (
+            <a href={href} class={classes} rel="noreferrer" target="_blank">
+                <slot />
+            </a>
+        )
+    }
+
+    {
+        !isLink && (
+            <div class={classes}>
+                <slot />
+            </div>
+        )
+    }
+</>
