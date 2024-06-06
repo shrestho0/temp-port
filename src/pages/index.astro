@@ -4,13 +4,13 @@ import { Image } from "astro:assets";
 
 import Layout from "@/layouts/Layout.astro";
 import SocialLinks from "@/components/SocialLinks.astro";
-import ProjectCard from "@/components/ProjectCard.astro";
 import Link from "@/components/shared/Link.astro";
 import convertAsteriskToStrongTag from "@/utils/convertAsteriskToStrongTag";
 
 import presentation from "@/data/presentation";
 import experiences from "@/data/experience";
 import ExperienceCard from "@/components/ExperienceCard.astro";
+import ProjectCard from "@/components/ProjectCard.astro";
 
 const projects = (await getCollection("projects")).sort(function (
   first,
@@ -67,13 +67,17 @@ const projects = (await getCollection("projects")).sort(function (
         {
           projects.length !== 0 &&
             projects
-              .slice(0, 2)
+              .slice(0, 4)
               .map((project) => (
-                <projectCard
+                <ProjectCard
                   publishedAt={project.data.publishedAt}
                   title={project.data.title}
                   description={project.data.description}
                   slug={project.slug}
+                  techs={project.data.techs}
+                  status={project.data.status}
+                  prod_link={project.data.prod_link}
+                  project_type={project.data.project_type}
                 />
               ))
         }

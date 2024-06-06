@@ -1,9 +1,13 @@
 ---
 title: "QRCode Bee"
-publishedAt: 2023-05-24
+publishedAt: 2024-05-24
 description: "Lorem ipsum dolor sit amet consectetur et ultrices blandit neque ege"
-slug: "the-power-of-react-hooks"
+slug: "qrcode-bee"
 isPublish: true
+techs: "SvelteKit, Express, NodeJs"
+status: "Production"
+project_type: "Client Project"
+prod_link: "https://google.com"
 ---
 
 ## Vocesque meum remis est neque Neptunus monte

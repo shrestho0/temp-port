@@ -1,5 +1,5 @@
 ---
-import { CollectionEntry, getCollection } from "astro:content";
+import { type CollectionEntry, getCollection } from "astro:content";
 import Layout from "@/layouts/Layout.astro";
 import formatDate from "@/utils/formatDate";
 
@@ -13,20 +13,20 @@ export async function getStaticPaths() {
 }
 
 type Props = {
-  projects: CollectionEntry<"projects">;
+  project: CollectionEntry<"projects">;
 };
 
-const { projects } = Astro.props;
-const { Content } = await projects.render();
+const { project } = Astro.props;
+const { Content } = await project.render();
 ---
 
-<Layout title={projects.data.title} description={projects.data.description}>
+<Layout title={project.data.title} description={project.data.description}>
   <main class="projects mx-auto flex w-full max-w-prose flex-col gap-4">
     <header role="presentation">
       <h1 class="text-md">
-        {projects.data.title} - {formatDate(projects.data.publishedAt)}
+        {project.data.title} - {formatDate(project.data.publishedAt)}
       </h1>
-      <p class="italic">{projects.data.description}</p>
+      <p class="italic">{project.data.description}</p>
     </header>
 
     <Content />
