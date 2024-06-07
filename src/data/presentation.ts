@@ -25,6 +25,7 @@ const presentation: Presentation = {
     {
       label: "LinkedIn",
       link: "https://linkedin.com/in/shrestho0/",
+
     },
     {
       label: "Github",
