@@ -12,8 +12,6 @@ project_year: "2024"
 ---
 
 
-Preview URL: https://p471.vercel.app/
-
 Github Repo URL: https://github.com/shrestho0/tictactoe-flutter
 
 
@@ -30,5 +28,36 @@ Two player tictactoe game for my university course named "Mobile Application Dev
 
 
 ## Screenshots
-Screenshots & Resources can be found in this doc: https://docs.google.com/document/d/1RZ5c1RKiQbHARJUO2qVMXeDorL_PrqGY/edit?usp=sharing&ouid=114005189429885331467&rtpof=true&sd=true
 
+
+![](./01-auth-page.png)
+
+*Authentication Screen*
+
+![](./02-logged-in.png)
+
+*Logged in Screen*
+
+![](./03-invitation-game-starting.png)
+
+*Invitation and Game acceptance Screens*
+
+![](./04-game-playing.png)
+
+*Game Playing Screens*
+
+![](./05-leader-board.png)
+
+*Leaderboard Screen*
+
+![](./06-personal-game-record.png)
+
+*Personal Game Record Screen*
+
+![](./07-user-profile.png)
+
+*User Profile Screen*
+
+![](./08-edit-user-profile.png)
+
+*User Profile Edit Screen*

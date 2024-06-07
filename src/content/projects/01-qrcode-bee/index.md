@@ -22,7 +22,6 @@ QRCode-Bee is a microservice based scalable solution for customizer qr, vcard ge
 Some screenshots of the project due to preview url is not available. 
 
 
-
 ![](./8.png)
 
 *QRCode Generation & Customizations*
