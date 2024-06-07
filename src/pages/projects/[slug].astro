@@ -29,6 +29,20 @@ const { Content } = await project.render();
         </span>
       </h1>
       <p class="italic">{project.data.description}</p>
+      <div>
+        <div class="flex select-none gap-2 py-4">
+          <p
+            class="w-fit rounded-md bg-neutral-900 px-4 py-1 transition-all duration-300 hover:-translate-y-1 hover:border-neutral-400"
+          >
+            {project.data.project_type}
+          </p>
+          <p
+            class="w-fit rounded-md bg-neutral-900 px-4 py-1 transition-all duration-300 hover:-translate-y-1 hover:border-neutral-400"
+          >
+            {project.data.status}
+          </p>
+        </div>
+      </div>
     </header>
 
     <Content />

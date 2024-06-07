@@ -3,13 +3,14 @@ import { SEO } from "astro-seo";
 import { AstroFont } from "astro-font";
 import { SITE_URL } from "@/data/config";
 import type { HeadTags } from "@/utils/types/HeadTags";
+import presentation from "@/data/presentation";
 
 type Props = HeadTags;
 
 const { title, description, noindex, og } = Astro.props;
 
 const DEFAULT_TITLE_PAGE = "Shrestho - Software Engineer / DevOps";
-const DEFAULT_DESCRIPTION_PAGE = ".";
+const DEFAULT_DESCRIPTION_PAGE = presentation.description;
 const DEFAULT_URL_SITE = SITE_URL;
 
 const openGraph = {

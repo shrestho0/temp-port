@@ -5,8 +5,8 @@ description: "mCMS is a markdown file based minimal cms"
 slug: "minimal-cms"
 isPublish: true
 techs: "SvelteKit, Express, NodeJs"
-status: "Production"
-project_type: "Personal / Uni Project"
+status: "Complete"
+project_type: "Personal + Uni Project"
 prod_link: "https://google.com"
 project_year: "2024"
 ---

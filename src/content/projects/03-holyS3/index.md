@@ -5,7 +5,7 @@ description: "Cross Platform S3 File manager for Linux Based Systems"
 slug: "holy-s3"
 isPublish: true
 techs: "Rust, Tauri, SvelteKit, Tailwind CSS"
-status: "Development"
+status: "Under Development"
 project_type: "Open Source"
 prod_link: ""
 project_year: "2024"

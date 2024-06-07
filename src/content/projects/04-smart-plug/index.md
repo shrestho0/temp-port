@@ -5,7 +5,7 @@ description: "Applications for IOT Powered SmartPlug"
 slug: "iot-smart-plug"
 isPublish: true
 techs: "AWS IOT Core, NestJS, Flutter"
-status: "Development"
+status: "Under Development"
 project_type: "Client Project"
 prod_link: ""
 project_year: "2024"

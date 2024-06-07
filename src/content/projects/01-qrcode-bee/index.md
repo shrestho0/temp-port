@@ -5,7 +5,7 @@ description: "Advanced Customized QR and VCard Generation Tool"
 slug: "qrcode-bee"
 isPublish: true
 techs: "SvelteKit, Express, NodeJs, Golang"
-status: "Production"
+status: "Complete"
 project_type: "Client Project"
 project_year: "2024"
 
@@ -14,7 +14,7 @@ project_year: "2024"
 
 ## Project Intro
 
-QRCode-BEE is a microservice based scalable solution for customizer qr, vcard generation consisting sass application. This system is built with SvelteKit, Express, Golang, Pocketbase and other technologies. This project has been developed with collaboration with Ahsan Hasib Koushik for a tech company based in Bangladesh. The whole system, from system design to deployment was done following the DevOps methedology. While doing the project, we modified the qr library using jsdom and canvas that helped us create apis for generations. Web application of this project, the frontend service, consists of 15+ modules for user along with payment and other miscellaneous features and capable of providing static and dynamic qr codes for each. Bulk qrcode, file manager, analytics, refer and earn, trash  are some other user specific features. This system also provides api for end user and agencies to use this services of this application.
+QRCode-Bee is a microservice based scalable solution for customizer qr, vcard generation consisting sass application. This system is built with SvelteKit, Express, Golang, Pocketbase and other technologies. This project has been developed with collaboration with Ahsan Hasib Koushik for a tech company based in Bangladesh. The whole system, from system design to deployment was done following the DevOps methedology. While doing the project, we modified the qr library using jsdom and canvas that helped us create apis for generations. Web application of this project, the frontend service, consists of 15+ modules for user along with payment and other miscellaneous features and capable of providing static and dynamic qr codes for each. Bulk qrcode, file manager, analytics, refer and earn, trash  are some other user specific features. This system also provides api for end user and agencies to use this services of this application.
 
 
 ## Screenshots
