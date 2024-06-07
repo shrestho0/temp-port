@@ -29,6 +29,7 @@ Two player tictactoe game for my university course named "Mobile Application Dev
 
 ## Screenshots
 
+![](./00.png)
 
 ![](./01-auth-page.png)
 
