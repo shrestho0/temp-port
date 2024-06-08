@@ -26,9 +26,10 @@ const skills: Skills = {
     frameworks: [
         { name: "SvelteKit", exp_level: "Intermediate" },
         { name: "Express", exp_level: "Intermediate" },
-        { name: "Elysia", exp_level: "Beginner" },
-        { name: "SpringBoot", exp_level: "Beginner" },
         { name: "Django", exp_level: "Intermediate" },
+        { name: "Elysia", exp_level: "Beginner" },
+        { name: "Flutter", exp_level: "Beginner" },
+        { name: "SpringBoot", exp_level: "Beginner" },
         { name: "Fiber", exp_level: "Beginner" },
     ],
     databases: [
@@ -45,7 +46,6 @@ const skills: Skills = {
         { name: "Maven" },
         { name: "Tailwind" },
         { name: "Firebase" },
-        { name: "AWS IOT Core" },
     ],
 
 }
