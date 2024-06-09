@@ -29,6 +29,7 @@ const openGraph = {
     title={title || DEFAULT_TITLE_PAGE}
     description={description || DEFAULT_DESCRIPTION_PAGE}
     noindex={noindex || false}
+    canonical={Astro.url}
     openGraph={{
       basic: {
         title: openGraph.title,
