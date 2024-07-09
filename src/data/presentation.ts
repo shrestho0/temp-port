@@ -20,7 +20,7 @@ const presentation: Presentation = {
   title: `Hi, I’m Shrestho 👋`,
   // profile: "/profile.webp",
   description:
-    "Hello, i'm a *full-stack developer* with over *2 years* of web experience and final year undergrad student. I am currently working with *SvelteKit, Express, Elysia, Typescript *. Outside of study and development work, I am learning NestJs, HTMX and Rust and working on my startup *DeshiCode*.",
+    "Hello, i'm a *full-stack developer* with over *1+ year* of experience and final year undergrad student. I am currently working with *SvelteKit, Express, Spring Boot, Typescript *. Outside of study and development work, I am learning NestJs, HTMX and Rust and working on my startup *DeshiCode*.",
   socials: [
     {
       label: "LinkedIn",
